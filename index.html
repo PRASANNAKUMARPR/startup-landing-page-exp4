@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nova is a creative startup helping businesses grow with modern digital solutions.">
+  <title>Nova | Build What's Next</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">nova<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">IDEAS INTO IMPACT</p>
+        <h1>Build what's next.<br><span>Start with us.</span></h1>
+        <p class="hero-text">We help ambitious businesses turn bold ideas into meaningful digital experiences.</p>
+        <a class="button" href="#contact">Let's get started <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Abstract colourful shapes">
+        <div class="shape shape-one"></div>
+        <div class="shape shape-two"></div>
+        <div class="shape shape-three"></div>
+        <div class="art-label">THINK<br>CREATE<br>GROW.</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div>
+        <p class="eyebrow">WHO WE ARE</p>
+        <h2>Small team.<br>Big possibilities.</h2>
+      </div>
+      <p>Nova is a forward-thinking startup focused on practical technology and creative solutions. We work with businesses to make their next big step simpler, smarter and more effective.</p>
+    </section>
+
+    <section class="section services-section" id="services">
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>Solutions that move you forward.</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-number">01</div>
+          <h3>Web Development</h3>
+          <p>Responsive, user-friendly websites that bring your brand to life.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-number">02</div>
+          <h3>Digital Strategy</h3>
+          <p>Clear digital plans that help you connect with the right audience.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-number">03</div>
+          <h3>Creative Solutions</h3>
+          <p>Fresh ideas and thoughtful design for modern business challenges.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">LET'S TALK</p>
+        <h2>Have an idea?<br>Let's make it happen.</h2>
+        <p>Tell us a little about yourself and we'll be in touch.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your idea" required></textarea>
+        <button class="button" type="submit">Send message <span aria-hidden="true">→</span></button>
+        <p class="form-note" id="formMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home">nova<span>.</span></a>
+    <p>© <span id="year"></span> Nova Startup. All rights reserved.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
